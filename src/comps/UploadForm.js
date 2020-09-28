@@ -12,6 +12,7 @@ const UploadForm = () => {
             
         if (selected && types.includes(selected.type)) {
             setFile(selected);
+            console.log(selected); 
         } else {
             setFile(null);
             setError('Please select and image file (png or jpeg)');
