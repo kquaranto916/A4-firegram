@@ -1,9 +1,9 @@
- import * as firebase from 'firebase/app';
- import 'firebase/storage';
- import 'firebase/firestore';
+import * as firebase from 'firebase/app';
+import 'firebase/storage';
+import 'firebase/firestore';
 
- // Your web app's Firebase configuration
- var firebaseConfig = {
+// Your web app's Firebase configuration
+var firebaseConfig = {
     apiKey: "AIzaSyATF9s4xoQNSge6ApCZA7hs7vZTeCIf4sg",
     authDomain: "a4-firearm.firebaseapp.com",
     databaseURL: "https://a4-firearm.firebaseio.com",
@@ -15,8 +15,9 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
-
+  
   export { projectStorage, projectFirestore, timestamp };
